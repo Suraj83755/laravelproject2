@@ -1,0 +1,46 @@
+------Project Report by Suraj------
+1.Introduction:-
+This project analyzed sales transaction data to uncover business insights and predict future trends.I have used python libraries like pandas and matplotlib to build this project.It main aim of the project or objectibe was to:-
+1. Cleaning and preparing raw sales records
+2. Identifying key sales patterns and trends
+3. Forecasting near-term performance
+
+2.Data Description:-
+Time Period: January to February 2024
+I have taken a sales dataset having field like Date,Product,Sales Amount, etc.The data was not cleaned so i have to transform it into the orignial data before working
+
+3. Data Cleaning Process:-
+Before Working on the dataset I make sured that the data is cleaned.These are the things i did:-
+A.Standardized all dates to pandas datetime format
+B.Corrected the misaligned record where 'North' appeared in the sales amount column
+C.Filled missing sales amounts with the median value ($150) and Marked unknown categories as 'Unknown'
+D.Eliminated 2 identical transaction records
+
+4.Exploratory Analysis Findings:-
+1.Sales Performance:-
+    Total Revenue: $1,250
+    Average Transaction: $138.89
+    Range: $90 (min) to $200 (max) per transaction
+
+2.Product Performance
+    Top Sellers:
+    1. Product A: $250
+    2. Product B: $270 
+    3. Product F: $220
+
+3.Geographical insights
+The South region led with $380 in total sales, followed by North ($250) then East ($200).
+
+5.Trend Analysis:-
+These are the trends i personally noticed:-
+a.81% month-over-month sales drop (Jan: $1,050 → Feb: $200)
+b.15th was the peak sales day ($200 single transaction)
+c.Product A showed stable sales across both months
+
+6.Forecasting
+=>Moving Average Forecast
+a.Predicted March 2024 sales: $625
+b.Best for short-term projections
+
+7.Conclusion
+This sales analysis project successfully identified key trends, including a significant 81% month-over-month decline and strong regional performance in the South. While the moving average forecast suggests cautious optimism for March ($625 projection), the limited dataset and high margin of error (34% MAPE) highlight the need for expanded data collection and more advanced modeling. The findings underscore both opportunities—such as capitalizing on top-performing Product A—and risks, particularly the February sales drop.This project also involves visual representation through graph.
